@@ -1,8 +1,3 @@
-(*dedup (l: 'a list) ~compare:('a -> 'a -> int) : 'a list: Removes consecutive duplicates from a list.
-Input: [1; 1; 2; 3; 3; 3; 1]
-Output: [1; 2; 3; 1]
-
-Hint: Use List.fold. Your accumulator can be a (list * 'a option) to remember the last element seen.*)
 open Base
 
 let dedup lis ~compare =
